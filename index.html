@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ в медицине | Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f7fc; display: flex; flex-direction: column; min-height: 100vh; }
+        .navbar { background: #0a2f44; }
+        .nav-link { color: white !important; font-weight: 500; }
+        .nav-link:hover, .nav-link.active { color: #00e0a8 !important; }
+        .hero { background: linear-gradient(135deg, #0a2f44, #1c6e8f); color: white; padding: 80px 0; }
+        main { flex: 1; }
+        footer { background: #0a2f44; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+        .content-card { background: white; border-radius: 20px; padding: 1.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+        .stat-number { font-size: 2.2rem; font-weight: bold; color: #1c6e8f; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-heart-pulse"></i> ИИ в медицине</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="index.html">Главная</a>
+            <a class="nav-link" href="diagnostics.html">Диагностика</a>
+            <a class="nav-link" href="drugs.html">Лекарства</a>
+            <a class="nav-link" href="robots.html">Роботы</a>
+            <a class="nav-link" href="proscons.html">+ и -</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="hero text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Искусственный интеллект в медицине</h1>
+            <p class="lead mt-3">Как нейросети спасают жизни, ставят диагнозы и создают новые лекарства</p>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <!-- Карточки с цифрами -->
+        <div class="row text-center mb-4">
+            <div class="col-md-3"><div class="content-card"><span class="stat-number">95%</span><br>точность диагностики рака</div></div>
+            <div class="col-md-3"><div class="content-card"><span class="stat-number">10-15 лет</span><br>→ <strong>1-2 года</strong><br>на разработку лекарств</div></div>
+            <div class="col-md-3"><div class="content-card"><span class="stat-number">1,5 млн</span><br>операций с роботами в 2025</div></div>
+            <div class="col-md-3"><div class="content-card"><span class="stat-number">-50%</span><br>времени на анализ снимков</div></div>
+        </div>
+
+        <!-- Картинка -->
+        <div class="content-card text-center">
+            <img src="images/iivmed.jpg" class="img-fluid rounded-4 shadow mb-3" alt="ИИ в медицине" style="max-height: 300px; object-fit: cover; width: 100%;">
+            <h3>Что такое ИИ в медицине?</h3>
+            <p class="lead">Искусственный интеллект — это компьютерные системы, которые обучаются на огромных массивах медицинских данных: снимках МРТ, историях болезней, генетической информации. Они распознают патологии быстрее и точнее человека, помогают врачам принимать решения и даже проводят операции.</p>
+        </div>
+
+        <!-- БЛОК ПРО ОСНОВОПОЛОЖНИКА (добавлен) -->
+        <div class="content-card">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="images/alan.jpg" class="img-fluid rounded-4 shadow" alt="Алан Тьюринг" style="max-height: 250px;">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="bi bi-trophy-fill"></i> Основоположник искусственного интеллекта — Алан Тьюринг</h3>
+                    <p>Алан Тьюринг (1912–1954) — британский математик, логик и криптограф. В 1950 году он опубликовал статью «Вычислительные машины и разум», в которой предложил знаменитый <strong>«Тест Тьюринга»</strong> — эксперимент, проверяющий, может ли машина мыслить как человек. Идеи Тьюринга заложили фундамент для создания обучающихся программ и нейросетей, которые сегодня используются в медицине. Без его работ не было бы ни AlphaFold, ни ИИ-диагностов, ни роботов-хирургов.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <p><i class="bi bi-check-lg text-success"></i> <strong>Тест Тьюринга</strong> — критерий «человечности» машины.</p>
+                </div>
+                <div class="col-md-6">
+                    <p><i class="bi bi-check-lg text-success"></i> <strong>Отец информатики</strong> — его работы легли в основу всех современных компьютеров.</p>
+                </div>
+            </div>
+            <p class="mt-2">Кроме Тьюринга, важный вклад внесли <strong>Джон Маккарти</strong> (ввёл термин «искусственный интеллект» в 1956 году), <strong>Марвин Минский</strong> (сооснователь лаборатории ИИ в MIT) и <strong>Аллен Ньюэлл</strong> с <strong>Гербертом Саймоном</strong> (разработчики первых логических программ).</p>
+        </div>
+
+        <!-- Таблица областей -->
+        <div class="content-card">
+            <h4 class="text-center">📊 Где ИИ уже помогает врачам</h4>
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="table-dark">
+                    <tr><th>Область медицины</th><th>Что делает ИИ</th><th>Результат</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Рентгенология</th><td>Анализ МРТ, КТ, рентгеновских снимков</th><td>Точность 94-96%, скорость 20 секунд</th></tr>
+                    <tr><td>Онкология</th><td>Поиск опухолей на ранних стадиях</th><td>Находит метастазы размером 1-2 мм</th></tr>
+                    <tr><td>Офтальмология</th><td>Анализ снимков сетчатки глаза</th><td>Выявляет диабетическую ретинопатию с точностью 97%</th></tr>
+                    <tr><td>Кардиология</th><td>Анализ ЭКГ, выявление аритмий</th><td>Точность до 99%</th></tr>
+                    <tr><td>Хирургия</th><td>Роботы-ассистенты при операциях</th><td>Точность до 0,1 мм, меньше травм</th></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Связь с ИБ -->
+        <div class="content-card text-center bg-light">
+            <h4><i class="bi bi-shield-lock"></i> Связь с нашей специальностью — информационной безопасностью</h4>
+            <p>Медицинские данные — одна из самых ценных целей для хакеров. Атаки на ИИ-системы больниц могут исказить диагнозы или заблокировать доступ к данным пациентов. Наша задача — защищать эти системы, внедрять шифрование, двухфакторную аутентификацию и мониторинг угроз.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Групповой проект: Верещагин М., Столетов М., Бердяев В., Реутов К.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роботы в медицине</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f7fc; display: flex; flex-direction: column; min-height: 100vh; }
+        .navbar { background: #0a2f44; }
+        .nav-link { color: white !important; font-weight: 500; }
+        .nav-link:hover, .nav-link.active { color: #00e0a8 !important; }
+        main { flex: 1; }
+        footer { background: #0a2f44; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+        .content-card { background: white; border-radius: 20px; padding: 1.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+        .hero-small { background: linear-gradient(135deg, #0a2f44, #1c6e8f); color: white; padding: 40px 0; text-align: center; margin-bottom: 2rem; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-heart-pulse"></i> ИИ в медицине</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Главная</a>
+            <a class="nav-link" href="diagnostics.html">Диагностика</a>
+            <a class="nav-link" href="drugs.html">Лекарства</a>
+            <a class="nav-link active" href="robots.html">Роботы</a>
+            <a class="nav-link" href="proscons.html">+ и -</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="hero-small">
+        <div class="container">
+            <h1>Роботы-хирурги и бионические протезы</h1>
+            <p class="lead">Точность, которой не достичь руке человека</p>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="content-card text-center">
+            <img src="images/rob.jpg" class="img-fluid rounded-4 shadow mb-3" alt="Робот-хирург" style="max-height: 300px; object-fit: cover; width: 100%;">
+            <h3>Как роботы помогают хирургам?</h3>
+            <p>Хирургические роботы не действуют автономно — они усиливают возможности врача. Хирург сидит за консолью и управляет манипуляторами, которые повторяют движения его рук, но с точностью до долей миллиметра. Система фильтрует тремор, увеличивает изображение в 10-15 раз и позволяет работать через крошечные разрезы. Результат — меньше боли, меньше шрамов, быстрое восстановление.</p>
+        </div>
+
+        <div class="content-card">
+            <h4 class="text-center">🤖 Основные хирургические роботы в мире</h4>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr><th>Робот</th><th>Страна</th><th>Число операций (2025)</th><th>Основное применение</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>da Vinci</strong></td><td>США</td><td>1,5 млн</td><td>Урология, гинекология, абдоминальная хирургия</td></tr>
+                    <tr><td><strong>Versius</strong></td><td>Великобритания</td><td>25 000</td><td>Малоинвазивная хирургия, компактный и мобильный</td></tr>
+                    <tr><td><strong>Mako (Stryker)</strong></td><td>США</td><td>80 000</td><td>Эндопротезирование коленных и тазобедренных суставов</td></tr>
+                    <tr><td><strong>CyberKnife</strong></td><td>США</td><td>50 000</td><td>Радиохирургия — лечение опухолей без разрезов</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-card">
+            <h4 class="text-center">🏥 Сравнение: обычная операция vs операция с роботом da Vinci</h4>
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr><th>Параметр</th><th>Обычная операция</th><th>С роботом da Vinci</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Разрез</td><td>10-20 см</td><td class="bg-success bg-opacity-25">1-2 см (несколько проколов)</td></tr>
+                    <tr><td>Кровопотеря</td><td>300-500 мл</td><td class="bg-success bg-opacity-25">50-100 мл</td></tr>
+                    <tr><td>Длительность госпитализации</td><td>7-10 дней</td><td class="bg-success bg-opacity-25">2-4 дня</td></tr>
+                    <tr><td>Реабилитация</td><td>4-6 недель</td><td class="bg-success bg-opacity-25">1-2 недели</td></tr>
+                    <tr><td>Точность движений</td><td>зависит от хирурга</td><td class="bg-success bg-opacity-25">до 0,1 мм, фильтрация тремора</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-card">
+            <h4 class="text-center">🦾 Бионические протезы с ИИ</h4>
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr><th>Название протеза</th><th>Разработчик</th><th>Принцип управления</th><th>Что умеет</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>LUKE Arm</strong></td><td>DARPA / Mobius Bionics</td><td>Сигналы мышц предплечья</td><td>Индивидуальное управление каждым пальцем, захват хрупких предметов</td></tr>
+                    <tr><td><strong>BeBionic</strong></td><td>Ottobock</td><td>Миоэлектрические датчики</td><td>14 хватов, сила до 45 кг</td></tr>
+                    <tr><td><strong>Hero Arm</strong></td><td>Open Bionics</td><td>Миоэлектрика + ИИ-адаптация</td><td>3D-печатный, лёгкий, дешёвый (для детей и взрослых)</td></tr>
+                </tbody>
+            </table>
+            <p class="mt-3">Современные нейропротезы учатся «на лету»: запоминают, как пользователь пытается двигать пальцами, и со временем становятся точнее. Это называют «машинным обучением в реальном времени» — ИИ адаптируется к индивидуальной физиологии человека.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Группа: Верещагин М., Столетов М., Бердяев В., Реутов К.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
